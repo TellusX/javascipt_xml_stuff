@@ -44,6 +44,18 @@ for (i=0;i<x.length;i++)
   document.write("</td></tr>");
   }
 document.write("</table>");
+
+x=xmlDoc.getElementsByTagName("CD");
+i=0;
+
+function displayCD()
+{
+artist=(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+title=(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+year=(x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
+txt="Artist: " + artist + "<br />Title: " + title + "<br />Year: "+ year;
+document.getElementById("showCD").innerHTML=txt;
+}
 </script>
 
 </body>
