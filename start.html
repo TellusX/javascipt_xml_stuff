@@ -45,17 +45,6 @@ for (i=0;i<x.length;i++)
   }
 document.write("</table>");
 
-y=xmlDoc_2.getElementsByTagName("CD");
-i=0;
-
-function displayCD()
-{
-artist=(y[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
-title=(y[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
-year=(y[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue);
-txt="Artist: " + artist + "<br />Title: " + title + "<br />Year: "+ year;
-document.getElementById("showCD").innerHTML=txt;
-}
 </script>
 
 </body>
